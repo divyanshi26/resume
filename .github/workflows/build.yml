@@ -30,7 +30,7 @@ jobs:
         root_file: divyanshi-sharma.tex
 
     - name: Upload PDF to the repo
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v1
       with:
         name: pdf
         path: divyanshi-sharma.pdf
