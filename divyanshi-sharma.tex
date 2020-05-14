@@ -106,38 +106,31 @@
     \end{minipage}
 }
 
+% Command for personal website
+\newcommand{\mySite}[1]{
+    \href{https://example.com}{\faLink \ #1}
+    \ |
+}
+
 % Command for email
 \newcommand{\myEmail}[1]{
-    \href{mailto:example@email.edu}
-    \ |
-}
-
-% Command for phone
-\newcommand{\myPhone}[1]{
-    \href{https://example.com}
-    \ |
-}
-
-% Command for linkedin
-\newcommand{\myLinkedIn}[1]{
-    \href{https://example.com}
+    \href{mailto:example@email.edu}{\faEnvelope \ #1}
     \ |
 }
 
 % Command for github profile
 \newcommand{\myGitHub}[1]{
-    \href{https://github.com/example/}
+    \href{https://github.com/example/}{\faGithub \ #1}
 }
 
 % Command for displaying name and Contact info
-\newcommand{\myName}[5]{
+\newcommand{\myName}[4]{
     \begin{center}
         {\huge{\color{burgundy}\scshape{#1}}} \\
         \vspace{8pt}
-        \myEmail{#2}
-        \myPhone{#3}
-        \myLinkedIn{#4}
-	\myGitHub{#5}
+        \myEmail{#4}
+        \mySite{#2}
+        \myGitHub{#3}
     \end{center}
     \vspace{-4pt}
 }
@@ -152,7 +145,7 @@
 \begin{document}
 
     %% HEADING --------------------
-    \myName{Divyanshi Sharma}{divyanss@usc.edu}{+1 (551) 502-4023}{https://www.linkedin.com/in/divyanshi26/{https://github.com/divyanshi26/}
+    \myName{Divyanshi Sharma}{https://website.com/}{https://github.com/example/}{example@email.com}
 
     %% EDUCATION --------------------
     \section{Education}
