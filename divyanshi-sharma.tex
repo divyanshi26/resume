@@ -20,6 +20,7 @@
 \usepackage{hyperref}
 \usepackage{colortbl}
 \usepackage{enumitem}
+\usepackage{calc}
 
 %% MARGINS %%
 
@@ -76,15 +77,15 @@
 
 % Command for displaying individual awards & activity bullets
 \newcommand{\activity}[3]{
-    \item #1\textit{#2} \hfill{\emph{#3}}      
+    \item #1 \textit{#2} \hfill{\emph{#3}}
 }
 
 % Command for the beginning of bullets in work exp and projects
 \newcommand{\bulletsBegin}{
     \vspace{1pt}
-    \begin{minipage}{17.6cm} 
-    \begin{itemize}[leftmargin=0.6cm]
-    \setlength\itemsep{-0.09em}
+    \begin{minipage}{17.6cm}
+    \begin{itemize}[leftmargin=0.6cm][rightmargin=\widthof{\textbf{YYYY}}]
+    % \setlength\itemsep{-0.09em}
 }
 
 % Command for the end of bullets in work exp and projects
@@ -217,11 +218,11 @@
     
     \section{Leadership \& Awards}
 
-    \bulletsBeginn
+    \bulletsBegin
         \activity{Viterbi Career Ambassador.}{Viterbi Career Connections.}{January 2019 - May 2020}
         \vspace{-4pt}
         \activity{Best "Hack for Good".}{AthenaHacks, University of Southern California.}{April 2019}
-    \bulletsEndd
+    \bulletsEnd
 
     % \vspace{3pt}
     % \color{light-grey}
