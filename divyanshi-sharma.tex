@@ -55,8 +55,8 @@
     \textbf{#1} -- \emph{#2} \\
 }
 
-\newcommand{\pro}[3]{
-    \item \href{#2}{\textbf{#1}} -- {#3}
+\newcommand{\pro}[4]{
+    \item \href{#2}{\textbf{#1}} -- {#3} \textbf{\textit{#4}}
     % \vspace{1pt}
 }
 
@@ -152,11 +152,11 @@
         
     \organization{Master of Science in Computer Science}{2020}
         {University of Southern California, Viterbi School of Engineering}{GPA: 3.60/4.00}
-        \vspace{-2pt}
+        \vspace{3pt}
 
 	\organization{Bachelor of Science in Computer Science and Engineering}{2017}
         {Jaypee University of Engineering and Technology}{GPA: 8.90/10.00}
-        \vspace{2pt}
+        \vspace{3pt}
 
     %% WORK EXPERIENCE --------------------
     % \vspace{5pt}
@@ -191,16 +191,14 @@
     
         \bulletsBegin
             \vspace{-3pt}
-        \pro{Cool Project}
+        \pro{Yelp Rating Predictor (Foundations and Applications of Data Mining)}
             {https://github.com/example/project}
-            {Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciun}
-        \pro{Cool Project}
+            {Predicted yelp review ratings using an ensemble of collaborative filtering techniques, reducing the RMSE from 1.18 to 0.99.}
+            {Python, Apache Spark, scikit-surprise.}
+        \pro{Part of Speech Tagger (Applied Natural Language Processing)}
             {https://github.com/example/project}
-            {totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo aspernatur aut odit aut fugit}
-        \pro{Cool Project}
-            {https://github.com/example/project}
-            {facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis}
-        
+            {Implemented a Part-of-Speech tagger from scratch using Hidden Markov Models (HMM) and the Viterbi Algorithm to achieved an F1 score of over 96\%, using Italian and Japanese datasets.}
+            {Python}
         
         % \vspace{-1pt}
         \bulletsEnd
