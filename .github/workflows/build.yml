@@ -30,7 +30,8 @@ jobs:
         root_file: divyanshi-sharma.tex
 
     - name: upload artifact
-      uses: actions/download-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
         name: pdf
         path: divyanshi-sharma.pdf
+        target: pdf
