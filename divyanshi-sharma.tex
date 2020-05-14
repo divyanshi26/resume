@@ -56,26 +56,27 @@
 }
 
 \newcommand{\pro}[4]{
-    \item \href{#2}{\textbf{#1}} -- {#3} \textbf{\textit{#4}}
+    \item \href{#2}{\textbf{#1}} -- {#3} \emph{#4}}
     % \vspace{1pt}
 }
 
 % Command for displaying skills table
-\newcommand{\skills}[3]{
+\newcommand{\skills}[4]{
     \vspace{-2pt}
     \ \ \ \ \ \ \ \ \ \ \ 
     \begin{tabular}{r!{\color{burgundy}\vrule}l}
           Programming: & #1 \\
-          Web \& Databases: & #2 \\
-          Tools \& Technologies: & #3
+          Frameworks/Libraries: & #2 \\
+          Databases: & #3 \\
+          Tools: & #4
     \end{tabular}
     \vspace{4pt}
 }
 
 
 % Command for displaying individual awards & activity bullets
-\newcommand{\activity}[2]{
-    \item #1 \hfill{\emph{#2}}      
+\newcommand{\activity}[3]{
+    \item #1 \textit{#2} \hfill{\emph{#3}}      
 }
 
 % Command for the beginning of bullets in work exp and projects
@@ -198,7 +199,7 @@
         \pro{Part of Speech Tagger (Applied Natural Language Processing)}
             {https://github.com/example/project}
             {Implemented a Part-of-Speech tagger from scratch using Hidden Markov Models (HMM) and the Viterbi Algorithm to achieved an F1 score of over 96\%, using Italian and Japanese datasets.}
-            {Python}
+            {Python.}
         
         % \vspace{-1pt}
         \bulletsEnd
@@ -207,16 +208,17 @@
     \section{Skills}
     
     \skills
-        {quia dolor sit amet, consectetur, adipisci velit}               % Programming languages
-        {quibusdam et aut officiis debitis aut rerum}               % Web & Databases
-        { libero tempore, cum soluta nobis est eligendi optio cumqueX}                             % Tools & Technologies
+        {C++, Python, SQL, C#, HTML5, CSS3, JavaScript, Java}  % Programming
+        {Angular, STL, Ionic, Django, .NET, numpy, scikit-learn, ZeroMQ, NetMQ, pandas }  % Frameworks/Libraries
+        {MySQL, Oracle, SQL Server, PostGIS}  % Databases
+        {Git, Unity3D, Azure}  % Tools
 
     %% AWARDS --------------------
     
-    \section{Awards}
+    \section{Leadership & Awards}
 
     \bulletsBeginn
-        \activity{Turing Award}{Mar. 20XX}
+        \activity{Best "Hack for Good".}{AthenaHacks, University of Southern California.}{April 2019}
         \vspace{-4pt}
         \activity{Nobel Prize}{May. 20XX}
     \bulletsEndd
