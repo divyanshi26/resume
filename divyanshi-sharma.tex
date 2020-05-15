@@ -32,7 +32,7 @@
     total={182mm,310mm},
     left=15mm,
     top=11mm,
-    right=15mm
+    right=-15mm
 }
 
 \raggedright
@@ -84,8 +84,8 @@
 
 
 % Command for displaying individual awards & activity bullets
-\newcommand{\activity}[3]{
-    \item #1 \textit{#2} \hfill{\emph{#3}}
+\newcommand{\activity}[2]{
+    \item #1 \hfill{\emph{#2}}
 }
 
 % Command for the beginning of bullets in work exp and projects
@@ -130,7 +130,7 @@
 
 % Command for personal website
 \newcommand{\mySite}[1]{
-    \href{https://divyanshi26.github.io}{#1}
+    \href{https://linkedin.com/in/divyanshi26}{#1}
     \ |
 }
 
@@ -162,7 +162,7 @@
 \begin{document}
 
     %% HEADING --------------------
-    \myName{Divyanshi Sharma}{divyanss\@usc.edu}{551-502-4023}{https://divyanshi26.github.io}{https://github.com/divyanshi26}
+    \myName{Divyanshi Sharma}{divyanss@usc.edu}{551-502-4023}{linkedin.com/in/divyanshi26}{github.com/divyanshi26}
 
     %% EDUCATION --------------------
     \section{Education}
@@ -186,20 +186,22 @@
             \item Programmed a reliable and fault-tolerant real-time bidirectional connection between Unity and JavaScript via a RESTful API.
             \item Designed an in-game Principal Component Analysis (PCA) on the Patient’s motion, leveraging the results to create new patient-appropriate tasks.
         \bulletsEnd
+        \vspace{-3pt}
         \toolsused{Tools: Unity3D, Python, C\#, Flask, Azure, JavaScript, ZeroMQ}
 
-        \organization{Freelicious}{June 2019 - Present}
+        \organization{Freelicious}{Jun 2019 - Present}
         {Frontend Developer}{Los Angeles, CA}
         \bulletsBegin
             \item Heading the Frontend Mobile Development Team, assigning weekly tasks, and coordinating with the Backend Team for integration.
             \item Collecting and translating design team's UX wireframes and mock-ups into responsive, interactive features into a hybrid mobile application, using Angular with Ionic, HTML5, CSS3, and JavaScript.
         \bulletsEnd
 
-        \organization{Wipro Technologies Ltd.}{October 2017 - July 2018}
+        \organization{Wipro Technologies Ltd.}{Oct 2017 - Jul 2018}
         {Project Engineer}{Hyderabad, India}
         \bulletsBegin
-            \item Programmed and enhanced the front end of a hybrid mobile application tracking requests submitted for collection of assets and provided a real-time dashboard to monitor progress and display statistics using Ionic, Angular and Bootstrap.
+            \item Programmed and enhanced the frontend of a hybrid mobile application tracking requests submitted for collection of assets and provided a real-time dashboard to monitor progress and display statistics.
             \item Delivered UI fixes and debugged the source code in a ticket managing application developed using .NET and AngularJS.
+            \item \textbf{\textit{Tools: Angular, Ionic,Bootstrap}}
         \bulletsEnd
 
     %% PROJECTS --------------------
@@ -226,7 +228,7 @@
     
     \skills
         {C++, Python, SQL, C\#, JavaScript, Java}  % Programming
-        {Flask, Angular, Ionic, ZeroMQ, Django, .NET, numpy, scikit-learn}  % Frameworks/Libraries
+        {Flask, Angular, Ionic, ZeroMQ, Apache Spark, Django, numpy, scikit-learn}  % Frameworks/Libraries
         {MySQL, Oracle, SQL Server, PostGIS}  % Databases
         {Git, Unity3D, Azure}  % Tools
 
@@ -235,11 +237,11 @@
     \section{Leadership \& Awards}
 
     \bulletsBegin
-        \activity{Viterbi Career Ambassador, }{Viterbi Career Connections.}{January 2019 - May 2020}
+        \activity{Viterbi Career Ambassador, Viterbi Career Connections.}{Jan 2019 - May 2020}
         \vspace{-4pt}
-        \activity{Best "Hack for Good".}{AthenaHacks, University of Southern California.}{April 2019}
+        \activity{Course Producer, CSCI 544 Applied Natural Language Processing, University of Southern California.}{Jan 2020 - May 2020}
         \vspace{-4pt}
-        \activity{Best "Hack for Good".}{AthenaHacks, University of Southern California.}{April 2019}
+        \activity{Best "Hack for Good", AthenaHacks, University of Southern California.}{Apr 2019}
     \bulletsEnd
 
     % \vspace{3pt}
