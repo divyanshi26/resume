@@ -17,6 +17,13 @@
 \usepackage{array}
 % \usepackage{fontawesome}
 \usepackage{hyperref}
+\definecolor{blueblack}{rgb}{0.0, 0.28, 0.67}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blueblack,
+    filecolor=blueblack,      
+    urlcolor=blueblack,
+}
 \usepackage{colortbl}
 \usepackage{enumitem}
 \usepackage{calc}
@@ -70,8 +77,8 @@
     \textbf{#1} -- \emph{#2} \\
 }
 
-\newcommand{\pro}[4]{
-    \item \href{#2}{\textbf{#1}} -- {#3} \textbf{\textit{#4}}
+\newcommand{\pro}[5]{
+    \item \href{#3}{\textbf{#1}} {#2}--{#4} \textbf{\textit{#5}}
     % \vspace{1pt}
 }
 
@@ -168,7 +175,7 @@
 \begin{document}
 
     %% HEADING --------------------
-    \myName{Divyanshi Sharma}{divyanss@usc.edu}{551-502-4023}{linkedin.com/in/divyanshi26}{github.com/divyanshi26}
+    \myName{Divyanshi Sharma}{divyanss@usc.edu}{+1 (551) 502-4023}{linkedin.com/in/divyanshi26}{github.com/divyanshi26}
 
     %% EDUCATION --------------------
     \section{Education}
@@ -189,12 +196,12 @@
         {Research Intern}{Los Angeles, CA}
         \bulletsBegin
             \item Served as team lead with two masters-level developers in developing a prototype for a gamified Virtual Reality device quantifying upper extremity range-of-motion and neuromuscular coordination in the paediatric outpatient setting.
-            \vspace{-4pt}
+            \vspace{-2pt}
             \item Programmed a reliable and fault-tolerant real-time bidirectional connection between Unity and JavaScript via a RESTful API.
-            \vspace{-4pt}
+            \vspace{-2pt}
             \item Designed an in-game Principal Component Analysis (PCA) on the Patient’s motion, leveraging the results to create new patient-appropriate tasks.
         \bulletsEnd
-        \vspace{-3pt}
+        \vspace{-6pt}
         \toolsused{Tools: Unity3D, Python, C\#, Flask, Azure, JavaScript, ZeroMQ}
 
         \organization{Freelicious}{Jun 2019 - Present}
@@ -208,8 +215,10 @@
         {Project Engineer}{Hyderabad, India}
         \bulletsBegin
             \item Programmed and enhanced the frontend of a hybrid mobile application tracking requests submitted for collection of assets and provided a real-time dashboard to monitor progress and display statistics.
+            \vspace{-2pt}
             \item Delivered UI fixes and debugged the source code in a ticket managing application developed using .NET and AngularJS.
-            \item \textbf{\textit{Tools: Angular, Ionic, Bootstrap}}
+            \vspace{-2pt}
+            \textbf{\textit{Tools: Angular, Ionic, Bootstrap}}
         \bulletsEnd
 
     %% PROJECTS --------------------
@@ -219,11 +228,11 @@
     
         \bulletsBegin
             \vspace{-3pt}
-        \pro{Yelp Rating Predictor (Foundations and Applications of Data Mining)}
+        \pro{Yelp Rating Predictor}{(Foundations and Applications of Data Mining)}
             {https://github.com/example/project}
             {Predicted yelp review ratings using an ensemble of collaborative filtering techniques, reducing the RMSE from 1.18 to 0.99.}
             {Python, Apache Spark, scikit-surprise.}
-        \pro{Part of Speech Tagger (Applied Natural Language Processing)}
+        \pro{Part of Speech Tagger}{(Applied Natural Language Processing)}
             {https://github.com/example/project}
             {Implemented a Part-of-Speech tagger from scratch using Hidden Markov Models (HMM) and the Viterbi Algorithm to achieved an F1 score of over 96\%, using Italian and Japanese datasets.}
             {Python.}
@@ -247,8 +256,8 @@
     \bulletsBegin
         \activity{Viterbi Career Ambassador, Viterbi Career Connections.}{Jan 2019 - May 2020}
         \vspace{-4pt}
-        \activity{Course Producer, CSCI 544 Applied Natural Language Processing, USC Viterbi.}{Jan 2020 - May 2020}
-        \vspace{-2pt}
+        \activity{Course Producer, CSCI 544 Applied NLP, USC Viterbi School of Engineering.}{Jan 2020 - May 2020}
+        \vspace{-3pt}
         \activity{Best "Hack for Good", AthenaHacks, University of Southern California.}{Apr 2019}
         \vspace{-2pt}
     \bulletsEnd
