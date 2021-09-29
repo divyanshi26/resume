@@ -150,7 +150,7 @@
 
 % Command for personal website
 \newcommand{\mySite}[1]{
-    \href{https://linkedin.com/in/divyanshi26}{#1} |
+    \href{https://linkedin.com/in/divyanshi26}{#1}
 }
 
 % Command for github profile
@@ -164,9 +164,9 @@
         {\huge{\color{burgundy}\scshape{#1}}} \\
         \vspace{6pt}
         \myEmail{#2}
-        \myEmail{#3}
-        \myPhone{#4}
-        \mySite{#5}
+       % \myEmail{#3}
+        \myPhone{#3}
+        \mySite{#4}
     \end{center}
     \vspace{-4pt}
 }
@@ -181,7 +181,7 @@
 \begin{document}
 
     %% HEADING --------------------
-    \myName{Divyanshi Sharma}{divyanshi@alumni.usc.edu}{divyanshi.263@gmail.com}{+1 (551) 502-4023}{linkedin.com/in/divyanshi26}
+    \myName{Divyanshi Sharma}{divyanshi@alumni.usc.edu}{+1 (551) 502-4023}{linkedin.com/in/divyanshi26}
 
     %% EDUCATION --------------------
     \section{Education}
@@ -198,7 +198,7 @@
     \section{Skills}
     
     \skills
-        {Python, JavaScript, C\#, SQL, C++, Java}  % Programming
+        {C\#, JavaScript, SQL, C++, Python, Java}  % Programming
         {ASP.NET, Angular, Flask, Ionic, ZeroMQ, numpy}  % Frameworks/Libraries
         {SQL Server, MySQL, Oracle, PostGIS}  % Databases
         {Git, Unity3D, Azure DevOps}  % Tools
@@ -210,13 +210,17 @@
     	\organization{Ideal Concepts, Inc.}{Aug 2020 - Present}
         {Jr. Software Engineer}{Allentown, PA}
         \bulletsBegin
-            \item Analyzing user requirements and designing new features to improve user experience by building interactive GUIs.
+            \item Designed and built new features for 500+ users leading to a significant reduction in manual work.
+	    \vspace{-2pt}
+            \item Implemented 2-factor authentication to add a layer of security to the login process which helped identify fake accounts.
+	    %\vspace{-2pt}
+            \item Contributed in deployment of new features on QA environment which accelerated testing and minimized production errors by over 10\%.
             \vspace{-2pt}
-            \item Refining stored procedures and APIs to increase security and efficiency of database calls, and maintaining existing features.
+            \item Refined stored procedures and APIs to increase security and efficiency of database calls.
             \vspace{-2pt}
         \bulletsEnd
         \vspace{-4pt}
-        \toolsused{\textbf{Tools:} C\#, ASP.NET, Angular, JavaScript, JQuery, SQL Server}
+        \toolsused{\textbf{Tools:} C\#, ASP.NET MVC, Angular, JavaScript, JQuery, SQL Server}
 %	\vspace{1pt}
 
         \organization{Kaspect Labs}{May 2019 - Jul 2020}
